@@ -1,0 +1,40 @@
+{
+    "name": "electron-titlebar",
+    "version": "1.4.0",
+    "description": "Emulate OS X window title bar",
+    "main": "index.js",
+    "scripts": {
+        "demo-watch": "wzrd index.js:demo/index.js -- -s titlebar",
+        "demo-build": "browserify index.js -o demo/index.js -s titlebar"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kapetan/titlebar"
+    },
+    "keywords": [
+        "osx",
+        "window",
+        "titlebar",
+        "stoplight"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kapetan/titlebar/issues"
+    },
+    "homepage": "https://github.com/kapetan/titlebar",
+    "dependencies": {
+        "brfs": "^1.4.0",
+        "defaultcss": "^1.1.1",
+        "dombo": "^3.2.0",
+        "domify": "^1.3.3"
+    },
+    "devDependencies": {
+        "browserify": "^9.0.8",
+        "wzrd": "^1.2.1"
+    },
+    "browserify": {
+        "transform": [
+            "brfs"
+        ]
+    }
+}
